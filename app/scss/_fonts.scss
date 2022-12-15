@@ -1,0 +1,91 @@
+// ------------ Fonts ---------------
+
+// font-family: 'CerebriSansPro-Regular', sans-serif;
+@font-face {
+  font-family: "CerebriSansPro-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("CerebriSansPro-Regular"),
+    url("../fonts/CerebriSansPro-Regular.woff2") format("woff2"),
+    url("../fonts/CerebriSansPro-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CerebriSansPro-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("CerebriSansPro-Medium"),
+    url("../fonts/CerebriSansPro-Medium.woff2") format("woff2"),
+    url("../fonts/CerebriSansPro-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CerebriSansPro-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("CerebriSansPro-SemiBold"),
+    url("../fonts/CerebriSansPro-SemiBold.woff2") format("woff2"),
+    url("../fonts/CerebriSansPro-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CerebriSansPro-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("CerebriSansPro-Bold"),
+    url("../fonts/CerebriSansPro-Bold.woff2") format("woff2"),
+    url("../fonts/CerebriSansPro-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CerebriSansPro-ExtraBold";
+  font-weight: 800;
+  font-style: normal;
+  src: local("CerebriSansPro-ExtraBold"),
+    url("../fonts/CerebriSansPro-ExtraBold.woff2") format("woff2"),
+    url("../fonts/CerebriSansPro-ExtraBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CerebriSansPro-Heavy";
+  font-weight: 900;
+  font-style: normal;
+  src: local("CerebriSansPro-Heavy"),
+    url("../fonts/CerebriSansPro-Heavy.woff2") format("woff2"),
+    url("../fonts/CerebriSansPro-Heavy.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Inter-Regular"),
+    url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Inter-SemiBold"),
+    url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-Black";
+  font-weight: 900;
+  font-style: normal;
+  src: local("Inter-Black"), url("../fonts/Inter-Black.woff2") format("woff2"),
+    url("../fonts/Inter-Black.woff") format("woff");
+  font-display: swap;
+}

@@ -1,0 +1,64 @@
+// -------------- Colors -----------------
+// color: $color-default;
+
+$color-default: rgb(153, 153, 153);
+$color-black: rgb(42, 42, 42);
+$color-white: rgb(255, 255, 255);
+$color-accent: rgb(127, 173, 57);
+$color-light_grey-bg: rgb(245, 245, 245);
+
+// -------------- Fonts ------------------
+// @include lato-400;
+
+@mixin inter-400 {
+  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin inter-700 {
+  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin davidLibre-500 {
+  font-family: "DavidLibre-Medium", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin davidLibre-700 {
+  font-family: "DavidLibre-Bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+// ----------------- Buttons ------------------
+
+// @include book-btn;
+
+@mixin book-btn {
+  @include davidLibre-500;
+  font-size: 1.25rem;
+  color: $color-white;
+  padding: 0.675em 2.25em;
+  background-color: $color-accent;
+  border-bottom-right-radius: 1.25em;
+  border-top-left-radius: 1.25em;
+  text-align: center;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+@mixin dishes-menu-btn {
+  @include book-btn;
+  background-color: $color-black;
+}
+
+// ----------------- Container -----------------------
+//  @include container;
+
+@mixin container {
+  margin: 0 auto;
+  padding: 0 0.9375em; // 15px
+}

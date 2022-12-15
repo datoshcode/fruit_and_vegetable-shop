@@ -1,0 +1,128 @@
+// ------------------ Імпорт scss файлів ---------------
+
+@import "vars";
+
+@import "fonts";
+
+@import "optimize";
+
+@import "global";
+
+// ----------------------- Базові стилі ----------------
+
+:root {
+  font-size: 0.75em; // 12px
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 0.875em; // 14px
+  }
+}
+
+@media (min-width: 1150px) {
+  :root {
+    font-size: 1em; // 16px
+  }
+}
+
+.header {
+  &__top {
+    background-color: $color-black;
+    color: $color-white;
+  }
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__top-offer {
+    display: flex;
+    gap: 0 1.0625em;
+  }
+  &__top-social-box {
+    display: flex;
+    gap: 0 1.125em;
+  }
+  &__top-social {
+    display: flex;
+    gap: 0 1.125em;
+  }
+  &__top-lang {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    position: relative;
+    option {
+      background-color: $color-white;
+      color: $color-black;
+    }
+  }
+}
+
+.dropdown-menu {
+  margin-right: 60px;
+}
+.dropdown-menu ul {
+  margin: 0;
+  padding: 0;
+  width: 135px;
+  list-style: none;
+  display: none;
+}
+.dropdown-menu ul li {
+  height: 35px;
+}
+
+.dropdown-menu ul li a {
+  display: block;
+  width: 100%;
+  padding: 5px 35px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+}
+.dropdown-menu ul li:first-child a {
+  background: url(../images/icons/us.svg) no-repeat 5px center;
+}
+.dropdown-menu ul li:last-child a {
+  background: url(../images/icons/de.svg) no-repeat 5px center;
+}
+
+.dropdown-menu .title {
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  padding: 5px 0 5px 35px;
+  font-size: 15px;
+  line-height: 20px;
+  cursor: pointer;
+  background: url(../images/icons/us.svg) no-repeat 5px center;
+  position: relative;
+}
+
+.dropdown-menu .title::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 95px;
+  background: url(../images/icons/arrow_down.svg) no-repeat 10px center;
+  width: 20px;
+  height: 20px;
+}
+
+.dropdown-menu.open .title {
+  background: url(../images/icons/us.svg) no-repeat 5px center;
+  color: #fff;
+  border-bottom: 4px solid $color-white;
+}
+
+.dropdown-menu.open .title::after {
+  background: url(img/arrow_up.png) no-repeat 10px center;
+}
+
+.dropdown-menu.open ul {
+  display: block;
+}
+
+// --------------------- Адаптив сайту ------------------
+@import "media";
