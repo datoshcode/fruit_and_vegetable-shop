@@ -9,28 +9,47 @@ $color-light_grey-bg: rgb(245, 245, 245);
 
 // -------------- Fonts ------------------
 // @include lato-400;
-
-@mixin inter-400 {
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+// font-family: 'CerebriSansPro', sans-serif;
+@mixin сerebriSansPro-400 {
+  font-family: "CerebriSansPro-Regular", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-@mixin inter-700 {
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@mixin davidLibre-500 {
-  font-family: "DavidLibre-Medium", Arial, Helvetica, sans-serif;
+@mixin сerebriSansPro-500 {
+  font-family: "CerebriSansPro-Medium", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-@mixin davidLibre-700 {
-  font-family: "DavidLibre-Bold", Arial, Helvetica, sans-serif;
+@mixin сerebriSansPro-600 {
+  font-family: "CerebriSansPro-SemiBold", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin сerebriSansPro-700 {
+  font-family: "CerebriSansPro-Bold", Arial, Helvetica, sans-serif;
   font-weight: 700;
+  font-style: normal;
+}
+
+@mixin сerebriSansPro-800 {
+  font-family: "CerebriSansPro-ExtraBold", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@mixin сerebriSansPro-900 {
+  font-family: "CerebriSansPro-Heavy", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+// font-family: 'Inter', sans-serif;
+@mixin inter-900 {
+  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 900;
   font-style: normal;
 }
 

@@ -14,7 +14,7 @@ E-mail автора: datoshcode@gmail.com;
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop "Fruits and vegetables"</title>
-    <!-- Styles swiper -->
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -58,31 +58,27 @@ E-mail автора: datoshcode@gmail.com;
                 </li>
               </ul>
               <!-- Languages -->
-              <div id="dropdown-menu" class="dropdown-menu">
-                <span class="title">English</span>
-                <ul>
-                  <li><a data-language="en" href="#">English</a></li>
-                  <li><a data-language="de" href="#">Deutsch</a></li>
+              <section class="dropdown__menu">
+                <ul class="dropdown__menu-inner">
+                  <li class="dropdown__menu-item">
+                    <a class="dropdown__menu-link" href="#"
+                      ><img src="images/icons/gb.svg" />English</a
+                    >
+                  </li>
+                  <ul class="dropdown__menu-list">
+                    <li class="dropdown__menu-item">
+                      <a class="dropdown__menu-link" href="#"
+                        ><img src="images/icons/de.svg" />Deutsch</a
+                      >
+                    </li>
+                    <li class="dropdown__menu-item">
+                      <a class="dropdown__menu-link" href="#"
+                        ><img src="images/icons/fr.svg" />France</a
+                      >
+                    </li>
+                  </ul>
                 </ul>
-              </div>
-              <!-- <select class="header__top-lang">
-              
-                <option class="lang lang-us" value="">
-                  <img src="images/icons/us.svg" alt="English flag" />
-                  English
-                </option>
-             
-                <option class="lang lang-de" value="">
-                  <img src="images/icons/de.svg" alt="German flag" />
-                  Deutsch
-                </option>
-             
-                <option class="lang lang-ua" value="">
-                  <img src="images/icons/ua.svg" alt="Ukrainian flag" />
-                  Українська
-                </option>
-              </select> -->
-              <span>|</span>
+              </section>
               <!-- Login -->
               <a class="header__top-login-link" href="#">
                 <img src="images/icons/user.svg" alt="User" />
@@ -136,6 +132,7 @@ E-mail автора: datoshcode@gmail.com;
         </div>
       </div>
     </header>
+
     <footer class="footer"></footer>
     <script src="js/main.min.js"></script>
   </body>

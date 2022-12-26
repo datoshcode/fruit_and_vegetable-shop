@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-de" viewBox="0 0 640 480">
-  <path fill="#ffce00" d="M0 320h640v160H0z"/>
-  <path d="M0 0h640v160H0z"/>
-  <path fill="#d00" d="M0 160h640v160H0z"/>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="19" height="14">
+
+<g transform="matrix(0.029166667 0 0 0.029166667 0.16666692 -0)">
+    <path d="M0 320L640 320L640 480L0 480L0 320z" stroke="none" fill="#FFCE00" fill-rule="nonzero" />
+    <path d="M0 0L640 0L640 160L0 160L0 0z" stroke="none" fill="#000000" fill-rule="nonzero" />
+    <path d="M0 160L640 160L640 320L0 320L0 160z" stroke="none" fill="#DD0000" fill-rule="nonzero" />
+</g>
 </svg>
