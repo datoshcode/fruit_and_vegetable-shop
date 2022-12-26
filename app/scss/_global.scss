@@ -1,3 +1,9 @@
+body {
+  @include сerebriSansPro-400;
+  color: $color-default;
+  font-size: 1rem;
+}
+
 ul {
   list-style: none;
 }

@@ -1,28 +1,15 @@
+// List with languages
 $(".dropdown__menu-inner").on("click", function () {
   $(".dropdown__menu-list").toggleClass("menu__list--active");
 });
 
-// swiper
-var swiper = new Swiper(".comments__slider", {
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
+// Adaptive menu button
 $(function () {
-  // ------ Кнопка бургер-меню для адаптива ------------
   $(".menu-btn").on("click", function () {
     $(".header__menu-list").toggleClass("menu__list--active");
   });
 
-  // ------ Плавный переход к разделам сайта с меню -----------
+  // Smooth transition to section
   $(".menu a").on("click", function (event) {
     event.preventDefault();
     var id = $(this).attr("href"),
