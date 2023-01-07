@@ -27,7 +27,7 @@
 }
 
 // ---- Header -----
-// -- Header top --
+// Header top
 .header {
   &__top {
     color: $color-white;
@@ -46,10 +46,10 @@
   }
 
   &__top-social-box {
-    display: flex;
-    gap: 0 3em;
     @include сerebriSansPro-500;
     font-size: 0.75em;
+    display: flex;
+    gap: 0 3em;
   }
 
   &__top-social {
@@ -72,22 +72,23 @@
   &__top-login-link {
     position: relative;
     display: flex;
-    align-items: center;
     gap: 0 0.625em;
+    align-items: center;
   }
 
   &__top-login-link:before {
     position: absolute;
     top: 2px;
     left: -18px;
-    content: "";
-    height: 17px;
     width: 1px;
+    height: 17px;
+    content: "";
     background-color: $color-white;
   }
-  // -- Header top /end --
 
-  // -- Header bottom --
+  // Header top /end
+
+  // Header bottom
   &__bottom {
     padding: 34px 0;
     color: $color-black;
@@ -95,20 +96,26 @@
 
   &__bottom-inner {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    gap: 0 113px;
     align-items: center;
   }
 
   &__bottom-list {
     display: flex;
-    justify-content: space-between;
     gap: 0 2.1875em;
+    justify-content: space-between;
   }
 
   &__bottom-link {
-    text-transform: uppercase;
-    @include сerebriSansPro-500;
+    @include сerebriSansPro-800;
     transition: all 0.3s;
+    text-transform: uppercase;
   }
 
   &__bottom-link:hover {
@@ -117,7 +124,7 @@
 
   &__bottom-user {
     display: flex;
-    gap: 0 15px;
+    gap: 0 20px;
   }
 
   &__bottom-login {
@@ -126,37 +133,89 @@
 
   &__bottom-login::before {
     position: absolute;
-    content: "";
     top: -6px;
     left: 12px;
     width: 16px;
     height: 16px;
-    background-color: $color-accent;
-    border-radius: 50%;
+    content: "";
     border: 2px solid $color-white;
+    border-radius: 50%;
+    background-color: $color-accent;
   }
 
   &__bottom-login span {
+    @include сerebriSansPro-900;
+    font-size: 0.625rem;
     position: absolute;
     top: -3px;
     left: 17px;
-    font-size: 0.625rem;
-    @include сerebriSansPro-800;
     color: $color-white;
   }
+
   &__bottom-summ {
     margin-left: 2.25em;
   }
-  // -- Header bottom /end --
+
+  &__bottom-img {
+    object-fit: cover;
+  }
+  // Header bottom /end
 }
 
 // Language list
 .dropdown__menu {
   margin-right: 1.25em;
+
   &-inner {
     position: relative;
+    display: inline-block;
+    vertical-align: middle;
   }
-  &-inner::after {
+
+  &-inner > li:hover .dropdown__menu-list {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  &-item {
+    position: relative;
+  }
+
+  &-link {
+    display: inline-flex;
+    gap: 0 0.625em;
+    align-items: center;
+    padding: 0.1875em 0.3125em;
+    text-decoration: none;
+  }
+
+  &-list .dropdown__menu-link:hover {
+    color: $color-accent;
+  }
+
+  &-list {
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    width: 120px;
+    padding: 5px 0;
+    transition: 0.5s ease-out;
+    opacity: 0;
+    background-color: $color-black;
+  }
+
+  .dropdown__flag-code {
+    padding-top: 0.125em;
+  }
+
+  .dropdown__flag-glyphicon {
+    margin-right: 0.3125em;
+  }
+
+  .dropdown__flag-glyphicon::before {
     position: absolute;
     top: 0;
     left: 75px;
@@ -165,33 +224,267 @@
     content: "";
     background: url(../images/icons/arrow_down.svg) no-repeat 10px center;
   }
-  &-link {
-    display: inline-flex;
-    gap: 0 0.625em;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.1875em 0.3125em;
-  }
-
-  &-list {
-    visibility: hidden;
-    padding: 0;
-    position: absolute;
-  }
-
-  .menu__list--active {
-    visibility: initial;
-    color: $color-white;
-    background-color: $color-black;
-    display: block;
-    width: 110px;
-  }
-
-  &-list:hover {
-    visibility: visible;
-  }
 }
-// Language list /end
 
-// --------------------- Адаптив сайту ------------------
+// Language list /end
+// ---- Header /end -----
+
+// ---- Promo ----
+.promo {
+  &__inner {
+    display: block;
+  }
+  // Sidebar on the left side
+  &__aside {
+    display: block;
+    float: left;
+    width: 100%;
+    max-width: 270px;
+    margin-right: 20px;
+  }
+
+  &__aside-title-box {
+    margin-bottom: 1.25em;
+    text-align: center;
+  }
+
+  &__aside-title {
+    @include сerebriSansPro-700;
+    position: relative;
+    padding: 0.875em 1.25em;
+    color: $color-white;
+    background-color: $color-accent;
+  }
+
+  &__aside-title::before {
+    position: absolute;
+    top: 46%;
+    left: 23px;
+    width: 19px;
+    height: 13px;
+    content: "";
+    transform: translateY(-50%);
+    background-image: url("../images/icons/menu_list.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__aside-title::after {
+    position: absolute;
+    top: 46%;
+    right: 23px;
+    width: 16px;
+    height: 10px;
+    content: "";
+    transform: translateY(-50%);
+    background-image: url("../images/icons/arrow_down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__aside-list {
+    display: block;
+    padding: 1.25em;
+    border: 1px solid $color-default;
+  }
+
+  &__aside-item:first-child {
+    padding-top: 1.5625em;
+  }
+
+  &__aside-item:last-child {
+    padding-bottom: 1.5625em;
+  }
+
+  &__aside-item + .promo__aside-item {
+    padding-top: 1.0625em;
+  }
+
+  &__aside-link {
+    @include сerebriSansPro-500;
+    transition: all 0.3s;
+  }
+
+  &__aside-link:hover {
+    color: $color-accent;
+  }
+
+  // Sidebar on the left side  /end
+
+  &__topbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // Search form
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 640px;
+    max-height: 47px;
+    border: 1px solid $color-default;
+    border-right: none;
+  }
+
+  &__form-filter {
+    display: inline-block;
+  }
+
+  &__form-menu {
+    position: relative;
+    display: table;
+    margin: 0 auto;
+  }
+
+  &__form-menu > li:hover .promo__form-submenu {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  &__form-menu-link {
+    @include сerebriSansPro-800;
+    margin-left: 1.25em;
+    color: $color-black;
+  }
+
+  &__form-menu-link::after {
+    position: absolute;
+    top: 40%;
+    right: -40px;
+    width: 16px;
+    height: 10px;
+    content: "";
+    transform: translateY(-50%);
+    background-image: url("../images/icons/arrow_down_black.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__form-submenu {
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    margin-top: 14px;
+    transition: 0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    opacity: 0;
+    background: $color-light_grey-bg;
+  }
+
+  &__form-submenu-link {
+    @include сerebriSansPro-800;
+    font-size: 1rem;
+    padding: 0 1.0625em 0.625rem;
+    text-align: left;
+    color: $color-default;
+    padding: 8px 20px;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__form-submenu-link:hover {
+    display: block;
+    color: $color-white;
+    background-color: $color-accent;
+  }
+
+  &__form-decor {
+    margin-left: 3.625em;
+  }
+
+  &__form-input {
+    width: 100%;
+    max-width: 261px;
+    padding: 0.8125em;
+    border: none;
+  }
+
+  &__form-input::placeholder {
+    padding: 0 10px;
+  }
+
+  &__form-btn {
+    @include сerebriSansPro-700;
+    padding: 0.875em 1.25em;
+    text-transform: uppercase;
+    color: $color-white;
+    border: none;
+    background-color: $color-accent;
+  }
+  // Search form /end
+
+  // Telephone
+  &__connect-inner {
+    display: flex;
+    gap: 0 13px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+  }
+
+  &__connect-schedule {
+    font-size: 0.75em;
+  }
+
+  // Product offer
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 63px;
+    background-color: $color-light_grey-bg;
+  }
+
+  &__content-inner {
+    padding: 20px 20px 64px 70px;
+  }
+
+  &__content-about {
+    @include сerebriSansPro-800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $color-accent;
+    letter-spacing: 0.2em;
+  }
+
+  &__content-title {
+    @include сerebriSansPro-900;
+    font-size: 40px;
+    padding-top: 20px;
+    color: $color-black;
+    line-height: 50px;
+    max-width: 350px;
+  }
+
+  &__content-text {
+    font-size: 1rem;
+    @include сerebriSansPro-500;
+    padding-top: 30px;
+  }
+
+  &__content-img {
+    object-fit: cover;
+  }
+
+  &__content-btn {
+    @include shop-now-btn;
+    margin-top: 60px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+  }
+
+  &__content-btn:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+      0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  }
+  // Product offer /end
+}
+
+// --------------------- Site adaptive ------------------
 @import "media";

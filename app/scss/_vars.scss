@@ -69,27 +69,11 @@ $color-light_grey-bg: rgb(245, 245, 245);
 
 // @include book-btn;
 
-@mixin book-btn {
-  @include davidLibre-500;
-  font-size: 1.25rem;
-  color: $color-white;
-  padding: 0.675em 2.25em;
-  background-color: $color-accent;
-  border-bottom-right-radius: 1.25em;
-  border-top-left-radius: 1.25em;
+@mixin shop-now-btn {
+  @include сerebriSansPro-700;
+  font-size: 1rem;
+  padding: 1.125em 1.25em;
   text-align: center;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-@mixin dishes-menu-btn {
-  @include book-btn;
-  background-color: $color-black;
-}
-
-// ----------------- Container -----------------------
-//  @include container;
-
-@mixin container {
-  margin: 0 auto;
-  padding: 0 0.9375em; // 15px
+  color: $color-white;
+  background-color: $color-accent;
 }

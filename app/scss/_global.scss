@@ -1,7 +1,7 @@
 body {
   @include сerebriSansPro-400;
-  color: $color-default;
   font-size: 1rem;
+  color: $color-default;
 }
 
 ul {
@@ -12,4 +12,10 @@ ul {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 0.625em;
+}
+
+.header__bottom-summ,
+.promo__connect-number {
+  color: $color-black;
+  @include сerebriSansPro-900;
 }

@@ -1,7 +1,7 @@
-// List with languages
-$(".dropdown__menu-inner").on("click", function () {
-  $(".dropdown__menu-list").toggleClass("menu__list--active");
-});
+// // List with languages
+// $(".dropdown__menu-inner").on("click", function () {
+//   $(".dropdown__menu-list").toggleClass("menu__list--active");
+// });
 
 // Adaptive menu button
 $(function () {

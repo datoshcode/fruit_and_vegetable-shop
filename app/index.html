@@ -1,10 +1,13 @@
 <!-- 
-Вебсайт розроблено за графічним макетом "Shop "Fruits and vegetables"".
-Усі авторські права на графічний макет належать його автору.
+The website is disassembled behind the graphic layout "Shop "Fruits and vegetables"".
+All copyrights to the graphic layout belong to the author.
 
-Автор розробки вебсайту: Андрій Овчаров;
-E-mail автора: datoshcode@gmail.com;
-Дата розробки вебсайту: 12.12.2022.
+!!! The file has been successfully validated at https://validator.w3.org/. 
+There are no critical errors.
+
+Website development author: Andriy Ovcharov;
+Author's e-mail: datoshcode@gmail.com;
+Website release date: 12/12/2022.
 -->
 
 <!DOCTYPE html>
@@ -13,7 +16,7 @@ E-mail автора: datoshcode@gmail.com;
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop "Fruits and vegetables"</title>
+    <title>"Fruits and vegetables"</title>
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
@@ -25,13 +28,16 @@ E-mail автора: datoshcode@gmail.com;
           <div class="header__top-inner">
             <!-- Header offer -->
             <div class="header__top-offer">
-              <a class="header__top-offer__item">
+              <a
+                class="header__top-offer__item"
+                href="mailto:Hello@colorlib.com"
+              >
                 <img src="images/icons/mail.svg" alt="mail" />Hello@colorlib.com
               </a>
               <span>|</span>
-              <p class="header__top-offer__item">
+              <a class="header__top-offer__item" href="#">
                 Free Shipping for all order of $99
-              </p>
+              </a>
             </div>
             <!-- Header socials links -->
             <div class="header__top-social-box">
@@ -63,12 +69,17 @@ E-mail автора: datoshcode@gmail.com;
                 <ul class="dropdown__menu-inner">
                   <!-- Default language -->
                   <li class="dropdown__menu-item">
-                    <a class="dropdown__menu-link" href="#"
-                      ><img
-                        src="images/icons/gb.svg"
-                        alt="Flag of the Great Britain"
-                      />English</a
-                    >
+                    <a class="dropdown__menu-link" href="#">
+                      <span class="dropdown__menu-wrapper">
+                        <img
+                          class="dropdown__flag-img"
+                          src="images/icons/gb.svg"
+                          alt="English"
+                        />
+                      </span>
+                      <span class="dropdown__flag-code">English</span>
+                      <i class="dropdown__flag-glyphicon"></i>
+                    </a>
 
                     <ul class="dropdown__menu-list">
                       <!-- German -->
@@ -108,45 +119,195 @@ E-mail автора: datoshcode@gmail.com;
       <div class="header__bottom">
         <div class="container">
           <div class="header__bottom-inner">
-            <!-- Logo -->
-            <a class="header__bottom-logo" href="#">
-              <img src="images/logo.svg" alt="Logo" />
-            </a>
-            <!-- Navigation -->
-            <nav class="header__bottom-menu">
-              <ul class="header__bottom-list">
-                <li class="header__bottom-item">
-                  <a class="header__bottom-link" href="#">Home</a>
-                </li>
-                <li class="header__bottom-item">
-                  <a class="header__bottom-link" href="#">Shop</a>
-                </li>
-                <li class="header__bottom-item">
-                  <a class="header__bottom-link" href="#">Pages</a>
-                </li>
-                <li class="header__bottom-item">
-                  <a class="header__bottom-link" href="#">Blog</a>
-                </li>
-                <li class="header__bottom-item">
-                  <a class="header__bottom-link" href="#">Contacts</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- User panel -->
+            <div class="header__bottom-wrapper">
+              <!-- Header logo -->
+              <a class="header__bottom-logo" href="#">
+                <img src="images/logo.svg" alt="Logo" />
+              </a>
+              <!-- Navigation bar -->
+              <nav class="header__bottom-menu">
+                <ul class="header__bottom-list">
+                  <li class="header__bottom-item">
+                    <a class="header__bottom-link" href="#">Home</a>
+                  </li>
+                  <li class="header__bottom-item">
+                    <a class="header__bottom-link" href="#">Shop</a>
+                  </li>
+                  <li class="header__bottom-item">
+                    <a class="header__bottom-link" href="#">Pages</a>
+                  </li>
+                  <li class="header__bottom-item">
+                    <a class="header__bottom-link" href="#">Blog</a>
+                  </li>
+                  <li class="header__bottom-item">
+                    <a class="header__bottom-link" href="#">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- User bar -->
             <div class="header__bottom-user">
-              <a class="header__bottom-login" href="">
-                <img src="images/icons/heard.svg" alt="Heart" />
+              <a class="header__bottom-login" href="#">
+                <img
+                  class="header__bottom-img"
+                  src="images/icons/heard.svg"
+                  alt="Heart"
+                />
                 <span>3</span> </a
-              ><a class="header__bottom-login" href=""
-                ><img src="images/icons/bag.svg" alt="Bag" /> <span>3</span></a
+              ><a class="header__bottom-login" href="#"
+                ><img
+                  class="header__bottom-img"
+                  src="images/icons/bag.svg"
+                  alt="Bag"
+                />
+                <span>3</span></a
               >
               <!-- Purse -->
-              <p class="header__bottom-summ"><b>$150.00</b></p>
+              <p class="header__bottom-summ">$150.00</p>
             </div>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Promo -->
+    <section class="promo">
+      <div class="container">
+        <div class="promo__inner">
+          <!-- Sidebar on the left side -->
+          <aside class="promo__aside">
+            <div class="promo__aside-title-box">
+              <h3 class="promo__aside-title">All Department</h3>
+            </div>
+
+            <ul class="promo__aside-list">
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Fresh Meat</a>
+              </li>
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Vegetables</a>
+              </li>
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Fruit & Nut Gifts</a>
+              </li>
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Fresh Berries</a>
+              </li>
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Ocean Foods</a>
+              </li>
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Butter & Eggs</a>
+              </li>
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Fastfood</a>
+              </li>
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Fresh Onion</a>
+              </li>
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Papayaya & Crisps</a>
+              </li>
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Oatmeal</a>
+              </li>
+              <li class="promo__aside-item">
+                <a class="promo__aside-link" href="#">Fresh Bananas</a>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="promo__wrapper">
+            <!-- Bar with search form and contacts -->
+            <div class="promo__topbar">
+              <!-- Search form -->
+              <form class="promo__form">
+                <!-- Sort list by directories -->
+                <div class="promo__form-filter">
+                  <ul class="promo__form-menu">
+                    <li class="promo__form-menu-item">
+                      <a class="promo__form-menu-link" href="#"
+                        >All Categories</a
+                      >
+                      <ul class="promo__form-submenu">
+                        <li class="promo__form-submenu-item">
+                          <a class="promo__form-submenu-link" href="#"
+                            >Fastfood</a
+                          >
+                        </li>
+                        <li class="promo__form-submenu-item">
+                          <a class="promo__form-submenu-link" href="#"
+                            >Fresh Meat</a
+                          >
+                        </li>
+                        <li class="promo__form-submenu-item">
+                          <a class="promo__form-submenu-link" href="#"
+                            >Fruits</a
+                          >
+                        </li>
+                        <li class="promo__form-submenu-item">
+                          <a class="promo__form-submenu-link" href="#"
+                            >Vegetables</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Decorative line -->
+                <span class="promo__form-decor">|</span>
+                <input
+                  class="promo__form-input"
+                  type="text"
+                  placeholder="What do you need?"
+                />
+                <button class="promo__form-btn" type="submit">Search</button>
+              </form>
+              <!-- Telephone -->
+              <div class="promo__connect-inner">
+                <a class="promo__connect-link" href="tel:+6511188888">
+                  <img
+                    class="promo__connect-img"
+                    src="images/icons/telephone.svg"
+                    alt="Telephone"
+                  />
+                </a>
+                <div class="promo__connect-tel">
+                  <p class="promo__connect-number">+65 11-188-888</p>
+                  <span class="promo__connect-schedule">support 24/7 time</span>
+                </div>
+              </div>
+              <!-- Search form /end -->
+            </div>
+
+            <!-- Product offer -->
+            <div class="promo__content">
+              <div class="promo__content-item">
+                <div class="promo__content-inner">
+                  <span class="promo__content-about">Fruit fresh</span>
+                  <h1 class="promo__content-title">Vegetable 100% Organic</h1>
+                  <p class="promo__content-text">
+                    Free Pickup and Delivery Available
+                  </p>
+
+                  <!-- Shop now button -->
+                  <div class="promo__content-boxbtn">
+                    <a class="promo__content-btn" href="#">Shop now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="promo__content-item">
+                <img
+                  class="promo__content-img"
+                  src="images/promo.png"
+                  alt="Vegetables"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer"></footer>
     <script src="js/main.min.js"></script>
